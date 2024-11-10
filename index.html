@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Business Name</title>
+    <title>Howes Homes LLC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #2f4f4f;  /* Dark Slate Gray */
+            --secondary-color: #8b4513; /* Saddle Brown */
+            --text-light: #ffffff;
+            --text-dark: #333333;
+        }
+
+        body {
+            color: var(--text-dark);
+            background: url('assets/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .navbar, footer {
+            background-color: var(--primary-color);
+        }
+
+        .navbar a, footer p {
+            color: var(--text-light) !important;
+        }
+
+        .bg-primary {
+            background-color: var(--secondary-color) !important;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: var(--text-light);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        /* Section Colors */
+        #about, #services, #quote, #contact {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        /* Form Styling */
+        .form-control, .form-select, button {
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">Howes Homes LLC</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +72,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="bg-primary text-white text-center py-5">
+    <header>
         <div class="container">
             <h1>Welcome to Howes Homes LLC</h1>
             <p>Your solution for custom construction, deck building, and energy-efficient renovations.</p>
@@ -34,15 +80,17 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>We specialize in eco-friendly construction solutions, with over 15 years of experience in decks, fences, and home building.</p>
+            <p><em>Your Vision, Our Precision</em> – at Howes Homes LLC, we bring experience and dedication to a wide variety of services, from remodeling and home updates to custom outdoor projects. Whether you’re looking to refresh a bathroom or kitchen, enhance your outdoor spaces with landscaping, custom-built gardening beds, or poured concrete pathways, or simply tackle seasonal tasks like Christmas light decorating, we’ve got you covered.</p>
+            <p>We also handle painting, roofing, siding, deck and fence construction, as well as building pergolas, stairs, and sheds. Need lock installation, rekeying, or assistance with a lockout? We’re here to help with those, too. Our expertise extends to practical outdoor projects like tree cutting, firewood chopping, trench digging, and ground leveling, along with hauling services for junk removal, dump runs, and material transportation.</p>
+            <p>With skills in custom furniture making and repair, pressure washing, and even creating custom fire pits, we’re ready to take on any project, big or small. Our goal is to provide reliable, high-quality solutions tailored to fit your unique needs.</p>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="bg-light py-5">
+    <section id="services">
         <div class="container">
             <h2>Our Services</h2>
             <ul>
@@ -55,10 +103,10 @@
     </section>
 
     <!-- Quote Form Section -->
-    <section id="quote" class="py-5">
+    <section id="quote">
         <div class="container">
             <h2>Request a Quote</h2>
-            <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <form action="https://formsubmit.co/dylan@howeshomes.com" method="POST">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" class="form-control" id="name" name="name" required>
@@ -85,16 +133,16 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-light py-5">
+    <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@howeshomes.com">info@howeshomes.com</a></p>
-            <p>Phone: (123) 456-7890</p>
+            <p>Email: <a href="mailto:dylan@howeshomes.com">dylan@howeshomes.com</a></p>
+            <p>Phone: (206) 432-7722</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-center py-3">
         <p>&copy; 2024 Howes Homes LLC. All rights reserved.</p>
     </footer>
 
